@@ -11,10 +11,10 @@ import java.util.Set;
 
 public class Common {
 
-	public static Date geDatefromString(String prevDate, DateFormat sourceFormat) {		
+	public static Date geDatefromString(String strDate, DateFormat sourceFormat) {		
 		Date date = null;
 		try {
-			date = sourceFormat.parse(prevDate);
+			date = sourceFormat.parse(strDate);
 		} catch (ParseException e) {
 			e.printStackTrace();
 		}
